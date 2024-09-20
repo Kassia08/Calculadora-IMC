@@ -20,6 +20,30 @@ export const Modal = {
 
 // modalBtnClose.onclick = () => {
     // modalWrapper.classList.remove('open')
-    Modal.buttonClose.onclick = () => {
+Modal.buttonClose.onclick = () => {
+    Modal.close()
+} 
+
+
+
+/*
+--Posso escrever das seguintes formas: 
+
+window.addEventListener('keydown', event => {}) 
+arrow function
+
+OU:
+
+window.addEventListener('keydown', function () {})
+função anônima
+
+OU, a forma que MAYK acha melhor, pois fica mais óbvio o
+nome da função:
+*/
+window.addEventListener('keydown', handleKeydown)
+
+function handleKeydown(event) {
+    if(event.key === 'Escape') {
         Modal.close()
-    } 
+    }
+}
