@@ -11,7 +11,7 @@ por isso deve-se colocar o OU(representado por ||) == ""
 */
 
 
-export function IMC(weight, height) {
+export function calculateIMC(weight, height) {
     return (weight / ((height / 100) ** 2)).toFixed(2)
 }
 
@@ -19,4 +19,13 @@ export function IMC(weight, height) {
 /*
 -- Ao trazê-las para cá, tem que fazer o EXPORT.
 -- E no Script.js tem que fazer o IMPORT.
+*/
+
+
+
+/*
+CLEAN CODE/ Código Limpo (deixa o código mais legível, não importa se ficar maior)
+
+TROQUEi:
+- IMC --- calculateIMC
 */
