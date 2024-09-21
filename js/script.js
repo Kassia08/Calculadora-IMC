@@ -1,5 +1,6 @@
 import { Modal } from './modal.js'
 import { AlertError } from "./alert-error.js"
+import { IMC, notANumber } from "./utils.js"
 
 // Variáveis - Variables
 
@@ -40,18 +41,4 @@ form.onsubmit = function(event) {
 
 
 
-function notANumber(value) {
-    return isNaN(value) || value == ""
-}
-/* 
--- Significa que se eu passar um valor de string, por exemplo,
-ele vai falar que não é um número e a aplicação não irá funcionar se não for um número
--- No JS se colocar (""), valor vazio, ele considera um número,
-por isso deve-se colocar o OU(representado por ||) == ""
-*/
-
-
-function IMC(weight, height) {
-    return (weight / ((height / 100) ** 2)).toFixed(2)
-}
 
