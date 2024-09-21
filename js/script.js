@@ -41,6 +41,14 @@ function displayResultMessage(result) {
     Modal.open()
 }
 
+/*
+DESAFIO
+- Fechar a janela de erro ao digitar no campo
+- Evento é de nome input
+*/
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
+
 
 
 
