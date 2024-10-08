@@ -1,7 +1,7 @@
 <h1 align="center"> Calculadora de IMC</h1>
 
 <p align="center">
-A calculadora de IMC foi desenvolvida em JavaScript seguindo um modelo criado no Figma. <br/>
+A calculadora de IMC foi desenvolvida em JavaScript seguindo um modelo criado no Figma pelo professor. <br/>
 
 <img alt="Galeria" src="./images/projeto IMC.png" width="100%">
 
